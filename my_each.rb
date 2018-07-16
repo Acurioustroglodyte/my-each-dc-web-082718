@@ -1,7 +1,9 @@
 def my_each(arr)
   counter = 0
   while counter < arr.length
-    # Do something
+    n = arr[counter]
+    # Do something with 'n'
+    yield n
     counter += 1
   end
   return arr
